@@ -1,0 +1,22 @@
+uuid: e23f3171-f256-4fc0-972f-7f813db5d461
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - pasadena_bridge_club
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: pasadena_bridge_club_help
+theme: pasadena_bridge_club
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

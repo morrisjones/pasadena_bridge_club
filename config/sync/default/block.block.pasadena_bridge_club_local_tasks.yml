@@ -1,0 +1,22 @@
+uuid: 2c80ee87-84ee-4501-b804-d5d78b7e973c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - pasadena_bridge_club
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: pasadena_bridge_club_local_tasks
+theme: pasadena_bridge_club
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

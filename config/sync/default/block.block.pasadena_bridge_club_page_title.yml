@@ -1,0 +1,20 @@
+uuid: dd2f1eed-d90e-4acb-83c6-925f04415f24
+langcode: en
+status: true
+dependencies:
+  theme:
+    - pasadena_bridge_club
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: pasadena_bridge_club_page_title
+theme: pasadena_bridge_club
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

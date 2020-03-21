@@ -1,0 +1,22 @@
+uuid: 78025b73-e8e3-4d8f-9f2c-ba3bdab5b570
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pasadena_bridge_club
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: pasadena_bridge_club_messages
+theme: pasadena_bridge_club
+region: header
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 27d0e1bc-3f34-4ee1-9159-4bd1567fe9a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - pasadena_bridge_club
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: pasadena_bridge_club_powered
+theme: pasadena_bridge_club
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
