@@ -29,7 +29,15 @@ $headings-font-family:    $font-family-serif;
 $headings-font-weight:    400;
 
 $navbar-default-color:    black;
-$navbar-default-bg:       lightblue;
+$navbar-default-bg:       #ffffff;
 
+// Brand colors
+$text-color: black;
+$link-color: blue;
+$brand-primary: darkred;
+$headings-color: darkgreen;
 
-
+$navbar-default-color: darkblue;
+$navbar-default-link-color: darkred;
+$navbar-default-link-hover-color: darkblue;
+$navbar-default-link-active-color: darkred;
