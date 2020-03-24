@@ -1,0 +1,27 @@
+/*
+ * SASS main code for Pasadena Bridge Club w3css version
+ */
+
+body {
+  font-family: $font-family-sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $font-family-serif;
+  font-weight: $headings-font-weight;
+}
+
+.site-slogan {
+  text-transform: none;
+  font-size: 1.8em !important;
+  color: darken( $brand-tertiary, 10%);
+  margin-right: 100px;
+}
+
+#header {
+  background-color: white;
+}
+
+.main-navigation-wrapper, .close-nav, .mobile-nav {
+  background-color: $brand-secondary;
+}
