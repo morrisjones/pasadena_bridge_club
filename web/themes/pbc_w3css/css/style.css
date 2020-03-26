@@ -10,7 +10,8 @@ body {
 
 h1, h2, h3, h4, h5 {
   font-family: modesto-text, serif;
-  font-weight: 400;
+  font-weight: 500;
+  color: #179248;
 }
 
 .site-slogan {
@@ -18,12 +19,49 @@ h1, h2, h3, h4, h5 {
   font-size: 1.8em !important;
   color: #179248;
   margin-right: 100px;
+  padding-left: 5px;
 }
 
 #header {
   background-color: white;
 }
 
+#welcome-text {
+  padding: 5px;
+}
+
+#welcome-text-inner {
+  border: #be1e2d solid 3px;
+  padding: 5px;
+  background-color: #e1f0fa;
+}
+
 .main-navigation-wrapper, .close-nav, .mobile-nav {
   background-color: #1e7ebe;
+}
+
+#footer-menu {
+  background-color: #1e7ebe;
+}
+
+.copyright-inner, .ul-parent-account, .ul-parent-footer {
+  font-family: open-sans, sans-serif;
+}
+
+#main-navigation-h .ul-parent li > a {
+  padding: 5px 10px;
+}
+
+.w3-container {
+  padding: 0.01em 8px;
+}
+
+.top-callout {
+  width: 30%;
+  float: right;
+  text-align: center;
+  vertical-align: center;
+  border: 3px solid #be1e2d;
+  margin-top: 16px;
+  background-color: #f7fefa;
 }
