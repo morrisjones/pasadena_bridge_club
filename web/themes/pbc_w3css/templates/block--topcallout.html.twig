@@ -25,18 +25,18 @@
  * @see template_preprocess_block()
  */
 #}
-
 {%
   set classes = [
-    'w3-block',
-    'w3-block-wrapper',
-    'w3-third',
-    'w3-mobile',
-    'top-callout',
-    'block-' ~ configuration.provider|clean_class,
-    'block-' ~ plugin_id|clean_class,
-  ]
+  'w3-block',
+  'w3-block-wrapper',
+  'w3-third',
+  'w3-mobile',
+  'top-callout',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+]
 %}
+{% if is_front %}
 <section{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
@@ -47,3 +47,4 @@
     {{ content }}
   {% endblock %}
 </section>
+{% endif %}

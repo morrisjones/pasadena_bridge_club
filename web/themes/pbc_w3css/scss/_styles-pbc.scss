@@ -26,14 +26,17 @@ h1, h2, h3, h4, h5 {
   background-color: white;
 }
 
-#welcome-text {
+#block-welcometext-2 {
   padding: 5px;
-}
-
-#welcome-text-inner {
-  border: $brand-primary solid 3px;
-  padding: 5px;
-  background-color: $brand-blue-light;
+  margin: 0;
+  > div {
+    border: $brand-blue-dark solid 3px;
+    padding: 5px;
+    background-color: $brand-blue-light;
+    > p {
+      padding-left: 3em;
+    }
+  }
 }
 
 .main-navigation-wrapper, .close-nav, .mobile-nav {
@@ -69,7 +72,36 @@ h1, h2, h3, h4, h5 {
   float: right;
   text-align: center;
   vertical-align: center;
-  border: 3px solid $brand-primary;
+  border: 3px solid $brand-blue-dark;
   margin-top: 16px;
+  margin-bottom: 8px;
   background-color: $brand-green-light;
 }
+
+/* Attempt to deal with the spacing on the front page for main content */
+
+.w3-row-padding > .w3-quarter {
+  padding: 0;
+}
+
+.main-container-inner {
+  .first-sidebar, .w3css-content {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+
+i.left-sidebar-nav {
+  line-height: 18px !important;
+  &:before {
+    content: "More";
+  }
+}
+
+i.left-sidebar-nav-displayed {
+  line-height: 18px !important;
+  &:before {
+    content: "Less";
+  }
+}
+
