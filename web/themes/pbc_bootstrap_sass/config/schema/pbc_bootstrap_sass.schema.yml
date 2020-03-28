@@ -1,5 +1,0 @@
-# Schema for the theme setting configuration file of the THEMETITLE theme.
-
-pbc_bootstrap_sass.settings:
-  type: theme_settings
-  label: 'Pasadena Bridge Club (Bootstrap SASS) settings'
