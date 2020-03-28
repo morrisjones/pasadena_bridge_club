@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5 {
   font-family: modesto-text, serif;
   font-weight: 500;
   color: #106632;
+  margin: 5px 0;
 }
 
 .site-slogan {
@@ -80,6 +81,7 @@ h1, h2, h3, h4, h5 {
   margin-top: 0;
 }
 
+/* these two classes are used to hide and display the left sidebar */
 i.left-sidebar-nav {
   line-height: 18px !important;
 }
@@ -92,4 +94,44 @@ i.left-sidebar-nav-displayed {
 }
 i.left-sidebar-nav-displayed:before {
   content: "Less";
+}
+
+/* Formatting for the column of "plugs" aka the left-sidebar for the front page */
+div#left-sidebar > div.w3-sidebar-first {
+  padding: 12px 0 !important;
+}
+div#left-sidebar > div.w3-sidebar-first .plug-title {
+  margin: 0;
+}
+div#left-sidebar > div.w3-sidebar-first .plug-title:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+div#left-sidebar > div.w3-sidebar-first .plug-body {
+  margin: 0;
+}
+div#left-sidebar > div.w3-sidebar-first .plug-body:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+div#left-sidebar > div.w3-sidebar-first .plug-body p {
+  margin: 0;
+}
+div#left-sidebar article.plug-article {
+  background-color: #e1f0fa;
+  padding: 8px;
+  margin: 5px 0;
+  border: #1e7ebe solid 3px;
+}
+
+.w3-panel {
+  margin: 0;
+  padding: 0;
+}
+
+section#block-welcometext-2 div.w3-section {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
