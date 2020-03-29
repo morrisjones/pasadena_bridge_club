@@ -25,26 +25,18 @@
  * @see template_preprocess_block()
  */
 #}
-{%
-  set classes = [
-  'w3-block',
-  'w3-block-wrapper',
-  'w3-third',
-  'w3-mobile',
-  'top-callout',
-  'block-' ~ configuration.provider|clean_class,
-  'block-' ~ plugin_id|clean_class,
-]
-%}
 {% if is_front %}
-<section{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes.addClass('w3-padding w3-block-title') }}>{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    {{ content }}
-  {% endblock %}
-</section>
+  {# <div class="w3-third w3-mobile"><p style="line-height: 0;">&nbsp;</p></div> #}
+  <div class="w3-third w3-mobile pbc-header callout-container">
+    <div class="top-callout">
+      {{ title_prefix }}
+      {% if label %}
+        <h2{{ title_attributes.addClass('w3-padding w3-block-title') }}>{{ label }}</h2>
+      {% endif %}
+      {{ title_suffix }}
+      {% block content %}
+        {{ content }}
+      {% endblock %}
+    </div>
+  </div>
 {% endif %}

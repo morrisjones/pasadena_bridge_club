@@ -15,18 +15,42 @@ h1, h2, h3, h4, h5 {
   margin: 5px 0;
 }
 
+/* special blocks for the PBC front-page header */
+div.header-inner > div {
+  float: none;
+}
+
+.pbc-logo {
+  width: 100%;
+  padding: 8px;
+}
+
 .site-slogan {
   text-transform: none;
-  font-size: 1.8em !important;
+  font-size: 1.7em !important;
   color: #106632;
-  margin-right: 100px;
-  padding-left: 5px;
+  padding-left: 8px;
 }
 
 #header {
   background-color: white;
 }
 
+@media only screen and (min-width: 850px) {
+  div.pbc-header {
+    min-width: 400px;
+  }
+}
+@media only screen and (max-width: 849px) {
+  div.pbc-header {
+    width: 50%;
+  }
+}
+div.callout-container {
+  float: right;
+}
+
+/* end of special header blocks */
 #block-welcometext-2 {
   padding: 5px;
   margin: 0;
@@ -61,21 +85,14 @@ h1, h2, h3, h4, h5 {
 }
 
 .top-callout {
-  width: 30%;
-  float: right;
   text-align: center;
-  vertical-align: center;
   border: 3px solid #1e7ebe;
-  margin-top: 16px;
-  margin-bottom: 8px;
+  margin: 16px;
+  padding: 16px;
   background-color: #cbf7dc;
 }
 
 /* Attempt to deal with the spacing on the front page for main content */
-.w3-row-padding > .w3-quarter {
-  padding: 0;
-}
-
 .main-container-inner .first-sidebar, .main-container-inner .w3css-content {
   margin-bottom: 0;
   margin-top: 0;
