@@ -97,7 +97,7 @@
 
 /* Small/Medium Screen Only */
 /* Layout */
-@media (max-width:992px) {
+@media (max-width:600px) {
   .top-container-inner .first-top,
   .top-container-inner .second-top,
   .top-container-inner .third-top,

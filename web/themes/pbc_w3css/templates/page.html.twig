@@ -82,8 +82,8 @@
   <!-- Start: Main Navigation - Horizontal -->
   <div id="main-navigation-h" class="w3-col w3-clear main-navigation-wrapper w3-card w3-theme {{ color_primary_menu }}" role="navigation" aria-label="{{ 'Main Navigation'|t }}" >
     <div id="main-navigation-inner-h" class="d8-fade w3-row main-navigation-inner-h {{ website_width }}">
-        <i id="show-hide-left-sidebar" class="left-sidebar-nav w3-hide-large w3-button w3-left w3-large w3-theme {{ color_primary_menu }}"></i>
-        <i class="mobile-nav fa fa-bars w3-hide-large w3-button w3-right w3-large w3-theme {{ color_primary_menu }}"></i>
+        <i id="show-hide-left-sidebar" class="left-sidebar-nav w3-hide-large w3-hide-medium w3-button w3-left w3-large w3-theme {{ color_primary_menu }}"></i>
+        <i class="mobile-nav fa fa-bars w3-hide-large w3-hide-medium w3-button w3-right w3-large w3-theme {{ color_primary_menu }}"></i>
         {{ page.primary_menu }}
     </div>
   </div>
@@ -167,7 +167,7 @@
       <div class="w3-col w3-clear w3-row">
         {% if page.sidebar_first %}
           <!-- Start Left SideBar -->
-          <div id="left-sidebar" class="{{ sidebarfirst }} {{ main_region ? 'main-region' }} first-sidebar w3-hide-small w3-hide-medium">
+          <div id="left-sidebar" class="{{ sidebarfirst }} {{ main_region ? 'main-region' }} first-sidebar w3-hide-small">
             <div class="d8-fade w3-sidebar-first w3-mobile {{ color_sidebar_first }}">
               {{ page.sidebar_first }}
             </div>
