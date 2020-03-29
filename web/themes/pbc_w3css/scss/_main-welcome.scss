@@ -1,0 +1,19 @@
+@import "default-variables";
+
+/* Formatting for main content welcome block, front page only */
+
+#block-welcometext-2 {
+  padding: 5px;
+  margin: 0;
+  > div {
+    border: $brand-blue-dark solid 3px;
+    padding: 5px;
+    background-color: $brand-blue-light;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    > p {
+      padding-left: 3em;
+    }
+  }
+}
+

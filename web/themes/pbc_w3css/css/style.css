@@ -15,6 +15,11 @@ h1, h2, h3, h4, h5 {
   margin: 5px 0;
 }
 
+.w3-panel {
+  margin: 0;
+  padding: 0;
+}
+
 /* special blocks for the PBC front-page header */
 div.header-inner > div {
   float: none;
@@ -36,52 +41,18 @@ div.header-inner > div {
   background-color: white;
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 992px) {
   div.pbc-header {
     min-width: 400px;
   }
 }
-@media only screen and (max-width: 849px) {
+@media only screen and (max-width: 991px) {
   div.pbc-header {
     width: 50%;
   }
 }
 div.callout-container {
   float: right;
-}
-
-/* end of special header blocks */
-#block-welcometext-2 {
-  padding: 5px;
-  margin: 0;
-}
-#block-welcometext-2 > div {
-  border: #1e7ebe solid 3px;
-  padding: 5px;
-  background-color: #e1f0fa;
-}
-#block-welcometext-2 > div > p {
-  padding-left: 3em;
-}
-
-.main-navigation-wrapper, .close-nav, .mobile-nav {
-  background-color: #1e7ebe;
-}
-
-#footer-menu {
-  background-color: #1e7ebe;
-}
-
-.copyright-inner, .ul-parent-account, .ul-parent-footer {
-  font-family: open-sans, sans-serif;
-}
-
-#main-navigation-h .ul-parent li > a {
-  padding: 5px 10px;
-}
-
-.w3-container {
-  padding: 0.01em 8px;
 }
 
 .top-callout {
@@ -92,13 +63,16 @@ div.callout-container {
   background-color: #cbf7dc;
 }
 
-/* Attempt to deal with the spacing on the front page for main content */
-.main-container-inner .first-sidebar, .main-container-inner .w3css-content {
-  margin-bottom: 0;
-  margin-top: 0;
+/* end of special header blocks */
+/* Manage the main navigation row */
+.main-navigation-wrapper, .close-nav, .mobile-nav {
+  background-color: #1e7ebe;
 }
 
-/* these two classes are used to hide and display the left sidebar */
+#main-navigation-h .ul-parent li > a {
+  padding: 5px 10px;
+}
+
 i.left-sidebar-nav {
   line-height: 18px !important;
 }
@@ -113,7 +87,28 @@ i.left-sidebar-nav-displayed:before {
   content: "Less";
 }
 
+/* Formatting for main content welcome block, front page only */
+#block-welcometext-2 {
+  padding: 5px;
+  margin: 0;
+}
+#block-welcometext-2 > div {
+  border: #1e7ebe solid 3px;
+  padding: 5px;
+  background-color: #e1f0fa;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+#block-welcometext-2 > div > p {
+  padding-left: 3em;
+}
+
 /* Formatting for the column of "plugs" aka the left-sidebar for the front page */
+.main-container-inner .first-sidebar, .main-container-inner .w3css-content {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 div#left-sidebar > div.w3-sidebar-first {
   padding: 12px 0 !important;
 }
@@ -143,12 +138,21 @@ div#left-sidebar article.plug-article {
   border: #1e7ebe solid 3px;
 }
 
-.w3-panel {
-  margin: 0;
-  padding: 0;
+@media only screen and (max-width: 992px) {
+  .plug-container {
+    padding: 0 8px;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .plug-container {
+    padding: 0;
+  }
+}
+/* Footer styles */
+#footer-menu {
+  background-color: #1e7ebe;
 }
 
-section#block-welcometext-2 div.w3-section {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+.copyright-inner, .ul-parent-account, .ul-parent-footer {
+  font-family: open-sans, sans-serif;
 }
