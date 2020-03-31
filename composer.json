@@ -20,6 +20,8 @@
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
+        "drupal/entity_embed": "^1.1",
+        "drupal/inline_responsive_images": "^2.1",
         "drupal/smtp": "^1.0@beta",
         "drupal/typekit_integration": "^1.0",
         "drush/drush": "^10.2"
