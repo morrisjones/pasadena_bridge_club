@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8e6a9712560848a8f7a995f16bbe64f",
+    "content-hash": "fc75f403714edcd4ed041e62a61825d2",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2589,32 +2589,35 @@
         },
         {
             "name": "drupal/insert",
-            "version": "1.0.0",
+            "version": "2.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/insert.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-2.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/insert-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "6c37ceedc7821c7efdc5907a0f34adeb68d79b0a"
+                "url": "https://ftp.drupal.org/files/projects/insert-8.x-2.0-beta1.zip",
+                "reference": "8.x-2.0-beta1",
+                "shasum": "250a5d0bf79dd9fd603ec2086872caa5313d8168"
             },
             "require": {
-                "drupal/core": "*"
+                "drupal/core": "^8.5"
+            },
+            "require-dev": {
+                "drupal/colorbox": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-1.x": "1.x-dev"
+                    "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1514827685",
+                    "version": "8.x-2.0-beta1",
+                    "datestamp": "1555319585",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2632,7 +2635,7 @@
                     "homepage": "https://www.drupal.org/user/35821"
                 }
             ],
-            "description": "Assists in inserting files, images, or other media into the body field or other text areas.",
+            "description": "Assists in inserting files, images, or other media into the body field as well as other editor and text areas.",
             "homepage": "https://www.drupal.org/project/insert",
             "support": {
                 "source": "https://git.drupalcode.org/project/insert"
